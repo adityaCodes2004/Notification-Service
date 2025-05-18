@@ -5,7 +5,6 @@ from typing import Optional, Dict, List
 import uvicorn
 from datetime import datetime
 import json
-import os
 
 from app.core.config import settings
 from app.core.rabbitmq import get_rabbitmq_connection
@@ -78,6 +77,9 @@ async def get_user_notifications(
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/")
+def read_root():
+    return {"message": "Notification Service is running! Visit /docs for API documentation."}
+
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
-    uvicorn.run("app.main:app", host="0.0.0.0", port=port, reload=True) 
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True) 
