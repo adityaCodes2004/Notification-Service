@@ -115,9 +115,8 @@ The service uses a message queue (RabbitMQ) to handle notifications asynchronous
 Once the app is running, access the interactive API docs at:
 [http://localhost:8000/docs](http://localhost:8000/docs)
 
-## Deployed Application (Optional)
+## Deployed Application
 
-If deployed, you can try the live API here:
-[https://your-app-name.onrender.com/docs](https://your-app-name.onrender.com/docs)
+Try the live API here: [https://notification-service-sw14.onrender.com/docs](https://notification-service-sw14.onrender.com/docs)
 
 *(Replace the above link with your actual deployed URL after deployment.)* 
