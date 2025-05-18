@@ -108,4 +108,16 @@ The service uses a message queue (RabbitMQ) to handle notifications asynchronous
 
 - API endpoints are protected with authentication
 - Sensitive credentials are stored in environment variables
-- All API requests are validated using Pydantic models 
+- All API requests are validated using Pydantic models
+
+## API Documentation
+
+Once the app is running, access the interactive API docs at:
+[http://localhost:8000/docs](http://localhost:8000/docs)
+
+## Deployed Application (Optional)
+
+If deployed, you can try the live API here:
+[https://your-app-name.onrender.com/docs](https://your-app-name.onrender.com/docs)
+
+*(Replace the above link with your actual deployed URL after deployment.)* 
